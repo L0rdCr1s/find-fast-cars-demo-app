@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import * as Font from 'expo-font';
+import BottomNavigator from "./src";
+import { NavigationContainer } from '@react-navigation/native';
 
 export default class App extends Component {
   constructor(props) {
@@ -25,24 +26,9 @@ export default class App extends Component {
 
   render() {
     return (
-        <View style={styles.container}>
-          {
-            this.state.isFontLoaded ? (
-                <Text style={{ fontFamily: 'Nunito-Regular', fontSize: 56 }}>
-                  Find Car
-                </Text>
-            ) : null
-          }
-        </View>
+        <NavigationContainer>
+          <BottomNavigator/>
+        </NavigationContainer>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
