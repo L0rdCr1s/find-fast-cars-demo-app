@@ -1,12 +1,41 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import * as Font from 'expo-font';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      // check if fonts are already loaded
+      isFontLoaded: false,
+    }
+  }
+
+  async componentDidMount() {
+    /**Loading application custom fonts */
+    await Font.loadAsync({
+      'Nunito-Bold': require('./assets/fonts/nunito/Nunito-Bold.ttf'),
+      'Nunito-Light': require('./assets/fonts/nunito/Nunito-Light.ttf'),
+      'Nunito-Regular': require('./assets/fonts/nunito/Nunito-Regular.ttf'),
+    });
+
+    // when fonts are loaded update state
+    this.setState({isFontLoaded: true});
+  }
+
+  render() {
+    return (
+        <View style={styles.container}>
+          {
+            this.state.isFontLoaded ? (
+                <Text style={{ fontFamily: 'Nunito-Regular', fontSize: 56 }}>
+                  Find Car
+                </Text>
+            ) : null
+          }
+        </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
