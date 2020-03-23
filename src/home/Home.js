@@ -1,12 +1,25 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
+import {
+    heightPercentageToDP as heightToDp,
+    widthPercentageToDP as widthToDp,
+} from 'react-native-responsive-screen';
+import Header from "./components/Header";
+import TopList from "./components/TopList";
+import Recent from "./components/Recent";
 
 export default class Home extends Component {
     render() {
         return (
             <View style={styles.container}>
                 <View style={styles.header}>
-                    <Text>Find Car</Text>
+                    <Header />
+                </View>
+                <View style={styles.topList}>
+                    <TopList navigation={this.props.navigation} />
+                </View>
+                <View style={styles.recentSearch}>
+                    <Recent />
                 </View>
             </View>
         );
@@ -19,7 +32,14 @@ const styles = StyleSheet.create({
         backgroundColor: '#1D1F38'
     },
     header: {
-        flex: 1,
-        paddingHorizontal: 10,
-    }
+        paddingHorizontal: widthToDp(5),
+        paddingTop: heightToDp(6)
+    },
+    topList: {
+        paddingHorizontal: widthToDp(5),
+        marginBottom: heightToDp(3)
+    },
+    recentSearch: {
+        paddingHorizontal: widthToDp(5),
+    },
 });
