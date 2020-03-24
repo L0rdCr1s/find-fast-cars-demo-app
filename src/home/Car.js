@@ -102,15 +102,6 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
         top: heightToDp(6.3)
     },
-    brandCard: {
-        backgroundColor: '#272B50',
-        width: widthToDp(42),
-        height: heightToDp(34),
-        marginRight: widthToDp(5),
-        marginTop: heightToDp(3),
-        borderRadius: 10,
-        justifyContent: 'center',
-    },
     audi: {
         resizeMode: 'cover',
         height: widthToDp(32),

@@ -75,8 +75,8 @@ const styles = StyleSheet.create({
     },
     logo: {
         resizeMode: 'center',
-        height: widthToDp(19),
-        width: widthToDp(19),
+        height: widthToDp(23),
+        width: widthToDp(17),
         alignSelf: 'center',
     },
     brandCardText: {
