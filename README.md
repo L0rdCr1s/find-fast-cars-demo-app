@@ -11,6 +11,26 @@
 ---
 
 
+
+## Getting the app
+
+### For android users
+
+- **Download link**
+    - 👯  <a href="http://www.mediafire.com/file/ok9es03owvhyff5/findCars.apk/file" target="_blank">Download Apk here</a>
+
+### For ios users
+
+- Download expo client app from app store, scan the qr code with your mobile camera, tap on the open with expo notification to see the app.
+
+- **Expo client download link**
+    - 👯 <a href="https://apps.apple.com/app/apple-store/id982107779" target="_blank">App store expo client download link</a>
+
+![screenshot 2](https://user-images.githubusercontent.com/37629329/77427411-6c4bc780-6de7-11ea-8c16-c4ff7536b9fe.png)
+
+
+---
+
 ## Support
 
 Reach out to me
