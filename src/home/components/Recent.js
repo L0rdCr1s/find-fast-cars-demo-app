@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View, Image, FlatList} from 'react-native';
-import {
-    heightPercentageToDP as heightToDp,
-    widthPercentageToDP as widthToDp,
-} from 'react-native-responsive-screen';
+import {FlatList, Image, StyleSheet, Text, View} from 'react-native';
+import {heightPercentageToDP as heightToDp, widthPercentageToDP as widthToDp,} from 'react-native-responsive-screen';
 
 export default class Home extends Component {
     constructor(props) {

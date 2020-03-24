@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, View} from 'react-native';
-import {
-    heightPercentageToDP as heightToDp,
-    widthPercentageToDP as widthToDp,
-} from 'react-native-responsive-screen';
+import {heightPercentageToDP as heightToDp, widthPercentageToDP as widthToDp,} from 'react-native-responsive-screen';
 import Header from "./components/Header";
 import TopList from "./components/TopList";
 import Recent from "./components/Recent";
@@ -13,13 +10,13 @@ export default class Home extends Component {
         return (
             <View style={styles.container}>
                 <View style={styles.header}>
-                    <Header />
+                    <Header/>
                 </View>
                 <View style={styles.topList}>
-                    <TopList navigation={this.props.navigation} />
+                    <TopList navigation={this.props.navigation}/>
                 </View>
                 <View style={styles.recentSearch}>
-                    <Recent />
+                    <Recent/>
                 </View>
             </View>
         );

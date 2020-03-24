@@ -1,11 +1,7 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View, Image, FlatList, TouchableOpacity} from 'react-native';
-import {
-    heightPercentageToDP as heightToDp,
-    widthPercentageToDP as widthToDp,
-} from 'react-native-responsive-screen';
-import {Octicons} from '@expo/vector-icons';
-import {FontAwesome} from '@expo/vector-icons';
+import {FlatList, Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {heightPercentageToDP as heightToDp, widthPercentageToDP as widthToDp,} from 'react-native-responsive-screen';
+import {FontAwesome, Octicons} from '@expo/vector-icons';
 
 export default class TopList extends Component {
     constructor(props) {
@@ -41,13 +37,13 @@ export default class TopList extends Component {
                             <View style={styles.brandCard}>
                                 <Image source={item.logo} style={styles.logo}/>
                                 <View style={styles.carCountContainer}>
-                                    <Octicons name="primitive-dot" size={20} color="#6912F7" />
+                                    <Octicons name="primitive-dot" size={20} color="#6912F7"/>
                                     <Text style={styles.brandCardText}>
                                         {item.carCount} Cars
                                     </Text>
                                 </View>
                                 <View style={styles.featuredStar}>
-                                    <FontAwesome name="star" size={10} color="#F9AD32" />
+                                    <FontAwesome name="star" size={10} color="#F9AD32"/>
                                     <Text style={styles.brandFeaturedText}>
                                         Featured
                                     </Text>

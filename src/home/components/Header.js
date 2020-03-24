@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View, TextInput} from 'react-native';
-import {
-    heightPercentageToDP as heightToDp,
-    widthPercentageToDP as widthToDp,
-} from 'react-native-responsive-screen';
+import {StyleSheet, Text, TextInput, View} from 'react-native';
+import {heightPercentageToDP as heightToDp, widthPercentageToDP as widthToDp,} from 'react-native-responsive-screen';
 import {Octicons} from '@expo/vector-icons';
 
 export default class Header extends Component {
@@ -12,7 +9,7 @@ export default class Header extends Component {
             <React.Fragment>
                 <Text style={styles.heading}>Find Car</Text>
                 <View style={styles.searchContainer}>
-                    <Octicons name="search" color="#424568" size={17} style={styles.searchIcon} />
+                    <Octicons name="search" color="#424568" size={17} style={styles.searchIcon}/>
                     <TextInput
                         placeholderTextColor="#424568"
                         placeholder="search car"

@@ -2,8 +2,6 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeNavigator from './home/index';
 import Fire from './fire/index';
-import UserProfile from "./disabled/UserProfile";
-import Menu from "./disabled/Menu";
 import {heightPercentageToDP as heightToDp} from 'react-native-responsive-screen';
 import {StyleSheet, View} from 'react-native';
 import {EvilIcons, MaterialIcons, SimpleLineIcons} from '@expo/vector-icons';
@@ -48,7 +46,7 @@ function BottomNavigator() {
             />
             <Tab.Screen
                 name="Fire"
-                component={Fire}
+                component={HomeNavigator}
                 options={{
                     tabBarAccessibilityLabel: 'Fire',
                     tabBarIcon: ({color, focused}) => {
@@ -68,7 +66,7 @@ function BottomNavigator() {
             />
             <Tab.Screen
                 name="UserProfile"
-                component={UserProfile}
+                component={HomeNavigator}
                 options={{
                     tabBarAccessibilityLabel: 'Search',
                     tabBarIcon: ({color, focused}) => {
@@ -88,7 +86,7 @@ function BottomNavigator() {
             />
             <Tab.Screen
                 name="Menu"
-                component={Menu}
+                component={HomeNavigator}
                 options={{
                     tabBarAccessibilityLabel: 'Search',
                     tabBarIcon: ({color, focused}) => {

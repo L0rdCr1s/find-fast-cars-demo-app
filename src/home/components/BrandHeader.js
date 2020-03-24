@@ -1,11 +1,7 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
-import {
-    heightPercentageToDP as heightToDp,
-    widthPercentageToDP as widthToDp,
-} from 'react-native-responsive-screen';
-import {Octicons} from '@expo/vector-icons';
-import {Ionicons} from '@expo/vector-icons';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {heightPercentageToDP as heightToDp, widthPercentageToDP as widthToDp,} from 'react-native-responsive-screen';
+import {Ionicons, Octicons} from '@expo/vector-icons';
 
 export default class Brand extends Component {
     goBack = () => {
@@ -17,14 +13,14 @@ export default class Brand extends Component {
             <View style={styles.header}>
                 <View style={styles.backSearchContainer}>
                     <TouchableOpacity style={styles.backButton} onPress={this.goBack}>
-                        <Ionicons name="ios-arrow-round-back" color="#E5E8F7" size={40} />
+                        <Ionicons name="ios-arrow-round-back" color="#E5E8F7" size={40}/>
                     </TouchableOpacity>
-                    <Octicons name="search" color="#E5E8F7" size={20} style={styles.searchIcon} />
+                    <Octicons name="search" color="#E5E8F7" size={20} style={styles.searchIcon}/>
                 </View>
                 <View style={styles.carTopInfoContainer}>
                     <Text style={styles.carName}>Available</Text>
                     <View style={styles.carCountContainer}>
-                        <Octicons name="primitive-dot" size={20} color="#6912F7" />
+                        <Octicons name="primitive-dot" size={20} color="#6912F7"/>
                         <Text style={styles.brandCardText}>
                             196 Cars
                         </Text>
