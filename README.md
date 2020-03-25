@@ -26,8 +26,6 @@
 - **Expo client download link**
     - <a href="https://apps.apple.com/app/apple-store/id982107779" target="_blank">App store expo client download link</a>
 
-![screenshot 2](https://user-images.githubusercontent.com/37629329/77427411-6c4bc780-6de7-11ea-8c16-c4ff7536b9fe.png)
-
 
 ---
 
